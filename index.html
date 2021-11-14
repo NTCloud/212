@@ -309,8 +309,10 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-links">
+
             <h4>关于NoteStudio</h4>
-            <p>笔记工作室-是一个个由几名热爱网络的中学生联合起来的一个小团队，我们一直在前进，一直在进步。不管如何，我们的初心不变。 2016年由Notepad发布NTCloud并用其名字作为团队名字，2017年由于资金不足，导致NTCloud解散。2017年下半年，Notepad创办笔记工作室并延续至今.</p>
+            <p>
+笔记工作室-是一个个由几名热爱网络的中学生联合起来的一个小团队，我们一直在前进，一直在进步。不管如何，我们的初心不变。 2016年由Notepad发布NTCloud并用其名字作为团队名字，2017年由于资金不足，导致NTCloud解散。2017年下半年，Notepad创办笔记工作室并延续至今.现在(2021.11.13)NoteStudio正式命名为Kunyang Network Security Team(坤阳网络安全团队)主要负责人由我和@{uin:2735856762,nick:Passerby}</p>
           </div>
           <div class="col-lg-3 col-md-6 footer-newsletter">
           <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=285 height=86 src="http://music.163.com/outchain/player?type=2&amp;id=1364530152&amp;auto=1&amp;height=66"></iframe>
@@ -322,7 +324,33 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>笔记工作室 2021</strong>. All Rights Reserved
+        &copy; Copyright <strong>Kunyang Network Security Team 2021</strong>. All Rights Reserved
+       
+ ​<​div​ ​id​="​hitokoto​"​>​:D 获取中...​</​div​> 
+ ​<​i​ ​id​="​hitofrom​"​>​:D 获取中...​</​i​> 
+  
+ ​<​script​ ​src​="​https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js​"​>​</​script​> 
+ ​<​script​ ​src​="​https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js​"​>​</​script​> 
+ ​<​script​> 
+ ​  ​fetch​(​'https://v1.hitokoto.cn'​) 
+ ​    ​.​then​(​function​ ​(​res​)​{ 
+ ​      ​return​ ​res​.​json​(​)​; 
+ ​    ​}​) 
+ ​    ​.​then​(​function​ ​(​data​)​ ​{ 
+ ​      ​var​ ​hitokoto​ ​=​ ​document​.​getElementById​(​'hitokoto'​)​; 
+ ​      ​hitokoto​.​innerText​ ​=​ ​'\xa0\xa0\xa0\xa0\xa0\xa0\xa0'​ ​+​ ​data​.​hitokoto​; 
+ ​      ​var​ ​hitofrom​ ​=​ ​document​.​getElementById​(​'hitofrom'​)​; 
+ ​      ​hitofrom​.​innerText​ ​=​ ​"——"​ ​+​ ​data​.​from​ ​+​ ​'\xa0'​;​  
+ ​    ​}​) 
+ ​    ​.​catch​(​function​ ​(​err​)​ ​{ 
+ ​      ​console​.​error​(​err​)​; 
+ ​    ​}​) 
+ ​</​script​> 
+ ​                 
+ ​    ​</​div​> 
+ ​</​footer​> 
+  
+ ​      
       </div>
       <div class="credits">
         <script type="text/javascript" src="http://api.god-team.cn/hitokoto/hitokoto.php?format=js&amp;charset=utf-8"></script>
